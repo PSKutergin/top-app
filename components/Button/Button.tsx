@@ -13,8 +13,8 @@ export const Button = ({
   return (
     <button
       className={cn(styles.button, className, {
-        [styles.primary]: appearance == "primary",
-        [styles.ghost]: appearance == "ghost",
+        [styles.primary]: appearance === "primary",
+        [styles.ghost]: appearance === "ghost",
       })}
       {...props}
     >
@@ -22,7 +22,7 @@ export const Button = ({
       {arrow !== "none" && (
         <span
           className={cn(styles.arrow, {
-            [styles.down]: arrow === "done",
+            [styles.down]: arrow === "down",
           })}
         >
           <ArrowIcon />
