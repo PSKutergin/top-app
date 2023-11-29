@@ -1,5 +1,10 @@
-import Image from "next/image";
+import React from "react";
+import { Htag } from "@/components/Htag/Htag";
 
 export default function Home(): JSX.Element {
-  return <div>Привет</div>;
+  return (
+    <>
+      <Htag tag="h1">Hello</Htag>
+    </>
+  );
 }
